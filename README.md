@@ -33,7 +33,7 @@ Bem-vindo ao Horto Florestal! Este é um breve guia para os desenvolvedores cont
 
 
 6. **Crie um Pull Request:**
-- Vá para a página do repositório no GitHub e clique em "Compare & pull request" ao lado da sua nova branch.
+- Vá para a página do repositório no GitHub e clique em "Compare & pull request" ao lado da sua nova branch. 
 
 - Adicione uma descrição detalhada para o seu pull request e clique em "Create pull request" para iniciar uma discussão sobre as alterações.
 
