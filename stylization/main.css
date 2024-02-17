@@ -69,7 +69,11 @@ ul li a {
 }
 
 ul li a:hover {
-    background-color: #1f6f78;
+    opacity: 50%;
+}
+
+ul li a:active {
+    opacity: 20%;
 }
 
 .content {
