@@ -1,31 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Project/stylization/main.css">
-    <link rel="shortcut icon" href="Project/imgs/logoHortoIco.ico" type="image/x-icon">
-    <title>Horto IFCE</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Sidebar</title>
 </head>
-
 <body>
-    <div class="container">
-        <div class="sidebar">
-            <h1 class="menu">Menu</h1>
-            <ul>
-                <li><a href="arvores.html">Árvores</a></li>
-                <li><a href="plantas.html">Plantas</a></li>
-                <li><a href="animais.html">Animais</a></li>
-                <li><a href="frutos.html">Frutos</a></li>
-                <li><a href="eventos.html">Eventos</a></li>
-                <li><a href="passeio.html">Passeio</a></li>
-                <li><a href="visita.html">Visita</a></li>
-                <li><a href="educacional.html">Educacional</a></li>
-                <li><a href="administracao.html">Administração</a></li>
-            </ul>
-        </div>
-        <div class="content">      
-        </div>
-    </div>
+
+    <nav class="menu-lateral">
+
+        <div class="btn-expandir"><i class="bi bi-list"></i></div>
+            <!-- button que expande a lista e sua logo -->
+
+        <ul>
+            <li class="item-menu ativo">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-house"></i></span>
+                    <span class="txt-link">Inicio</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-geo-alt-fill"></i></span>
+                    <span class="txt-link">Local</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-tree-fill"></i></span>
+                    <span class="txt-link">Plantas</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-calendar"></i></span>
+                    <span class="txt-link">Eventos</span>
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+    
+    <script src="scripts/main.js"></script>
 </body>
 </html>
