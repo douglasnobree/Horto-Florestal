@@ -14,7 +14,6 @@ nav.menu-lateral{
     height: 100%;
     background-color: rgb(73, 228, 156);
     padding: 20px 0 20px 1%;
-    box-shadow: 5px 0 0 rgb(0, 100, 17);
 
     position: fixed;
     top: 0;
@@ -39,6 +38,7 @@ nav.menu-lateral:hover{
     font-size: 40px;
     cursor: pointer;
 }
+
 
 ul{
     height: 100%;
