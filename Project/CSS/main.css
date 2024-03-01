@@ -121,9 +121,9 @@ header{
 }
 
 button{
-    color: rgb(0, 255, 55);
+    color: rgb(0, 182, 9);
     background: transparent;
-    border: solid 2px rgb(38, 0, 255);
+    border: solid 2px rgb(0, 182, 9);
     padding: 5px;
     border-radius: 15px;
     font-size: 16px;
@@ -132,11 +132,13 @@ button{
 }
 
 button:hover{
-    background-color: rgb(35, 180, 137);
-    color: rgb(0, 153, 77);
+    background-color: rgb(0, 155, 21);
+    color: rgb(0, 155, 21);
     transition: 0.5s;
 }
 
 .container-text{
     padding: 150px 0 0 130px;
 }
+
+/* ---------------------------------------------------------------------------------------- */
