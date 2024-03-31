@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Criar Plantas</title>
+        <link
+            rel="stylesheet"
+            href="/Project/CSS/admin.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <nav class="menu-lateral">
+                <div class="btn-expandir"><i class="bi bi-list"></i></div>
+                <!-- button que expande a lista e sua logo -->
+
+                <ul>
+                    <li class="item-menu">
+                        <a href="/Project/pages/admin/adminPage.html">
+                            <span class="icon"
+                                ><i class="bi bi-house"></i
+                            ></span>
+                            <span class="txt-link">Inicio</span>
+                        </a>
+                    </li>
+                    <li class="item-menu ativo">
+                        <a href="/Project/pages/admin/createPlants.html">
+                            <span class="icon"
+                                ><i class="bi bi-plus-square"></i
+                            ></span>
+                            <span class="txt-link">Criar Plantas</span>
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="#">
+                            <span class="icon"
+                                ><i class="bi bi-dash-circle"></i
+                            ></span>
+                            <span class="txt-link">Apagar Plantas</span>
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="#">
+                            <span class="icon"
+                                ><i class="bi bi-calendar"></i
+                            ></span>
+                            <span class="txt-link">Criar Eventos</span>
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="#">
+                            <span class="icon"
+                                ><i class="bi bi-calendar-x"></i
+                            ></span>
+                            <span class="txt-link">Apagar Eventos</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="Content">
+                <h1>Criar Plantas</h1>
+                <div class="contentbody">
+                    <div class="createNewPlant">
+                        <form
+                            action="#"
+                            method="POST"
+                            class="formCreateNewPlant"
+                            id="formCreateNewPlant"
+                        >
+                            <label for="plantName">Nome da Planta:</label>
+                            <input
+                                type="text"
+                                id="plantName"
+                                name="plantName"
+                                required
+                            />
+
+                            <label for="platNameAlternative"
+                                >Nome cientifico da Planta:</label
+                            >
+                            <input
+                                type="text"
+                                id="plantDescription"
+                                name="platNameAlternative"
+                                required
+                            />
+
+                            <label for="plantDescription"
+                                >Descrição da Planta:</label
+                            >
+                            <input
+                                type="text"
+                                id="plantName"
+                                name="plantDescription"
+                                required
+                            />
+
+                            <label for="plantUrl">URL da foto da Planta:</label>
+                            <input
+                                type="text"
+                                id="plantDescription"
+                                name="plantUrl"
+                                required
+                            />
+
+                            <input
+                                type="submit"
+                                value="Criar Planta"
+                            />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="/Project/scripts/createPlant.js"></script>
+</html>
