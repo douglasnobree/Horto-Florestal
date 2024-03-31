@@ -9,7 +9,6 @@
 
 body {
     height: 100vh;
-    overflow: hidden;
 }
 
 nav.menu-lateral {
@@ -20,7 +19,6 @@ nav.menu-lateral {
 
     top: 0;
     left: 0;
-    overflow: hidden;
     transition: 0.2s;
 }
 
@@ -147,8 +145,8 @@ button:hover {
 /* ---------------------------------------------------------------------------------------- */
 .plantas{
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 20px;
     padding: 20px;
 }
