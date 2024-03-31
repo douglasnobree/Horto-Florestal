@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     try {
         // Fazendo a requisição ao servidor
-        const response = await fetch('https://horto-florestal-backend.onrender.com/');
+        const response = await fetch('https://horto-florestal-backend.onrender.com/plants/allPlants');
 
         if (!response.ok) {
             throw new Error('Erro ao obter os dados do servidor');
