@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const username = formData.get('username');
         const password = formData.get('password');
 
-        const response = await fetch('https://horto-florestal-backend.onrender.com/plants/plants/login', {
+        const response = await fetch('https://horto-florestal-backend.onrender.com/plants/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
