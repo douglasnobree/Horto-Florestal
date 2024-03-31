@@ -81,7 +81,6 @@ ul li.item-menu a .icon > i {
 }
 /* ---------------------------------------------------------------------------------------- */
 
-<<<<<<< HEAD
 header{
     display: flex;
     justify-content: space-around;
@@ -100,7 +99,6 @@ header{
 }
 
 .cabeçalho-link a{
-=======
 .cabeçalhoDiv {
     display: flex;
     justify-content: space-between;
@@ -128,12 +126,10 @@ header{
 }
 
 .cabeçalho-link a {
->>>>>>> 0ee421f94ad47be7f171b8258e4d8e701e096fb9
     color: rgb(0, 182, 0);
     font-size: 16px;
 }
 
-<<<<<<< HEAD
 .cabeçalho-link a :hover{
     color: rgb(0, 0, 0);
     transition: 0.3s all;
@@ -155,7 +151,7 @@ header{
 }
 
 button{
-=======
+}
 .logo {
     height: 80px;
     width: 80px;
@@ -165,7 +161,6 @@ button{
 }
 
 button {
->>>>>>> 0ee421f94ad47be7f171b8258e4d8e701e096fb9
     color: rgb(0, 182, 9);
     background: transparent;
     border: solid 2px rgb(0, 182, 9);
@@ -176,23 +171,18 @@ button {
     cursor: pointer;
 }
 
-<<<<<<< HEAD
 button:hover{
-=======
-button:hover {
->>>>>>> 0ee421f94ad47be7f171b8258e4d8e701e096fb9
     background-color: rgb(0, 155, 21);
     color: rgb(0, 155, 21);
     transition: 0.5s;
 }
 
-<<<<<<< HEAD
 .container-text{
     padding: 150px 0 0 130px;
 }
 
 /* ---------------------------------------------------------------------------------------- */
-=======
+
 .container-text {
     padding: 150px 0 0 130px;
 }
@@ -211,8 +201,8 @@ button:hover {
 }
 
 .imagem {
-    width: 25px;
-    height: 25px;
+    width: 250px;
+    height: 250px;
     border-radius: 15px;
 }
 
@@ -229,4 +219,4 @@ button:hover {
     border-radius: 15px;
     cursor: pointer;
 }
->>>>>>> 0ee421f94ad47be7f171b8258e4d8e701e096fb9
+}
