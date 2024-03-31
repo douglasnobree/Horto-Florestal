@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     const divPlantas = document.getElementById('plantas');
 
     try {
-        // const response = await fetch('https://horto-florestal-backend.onrender.com/plants/allPlants');
-        const response = await fetch('http://localhost:3333/plants/allPlants');
+        const response = await fetch('https://horto-florestal-backend.onrender.com/plants/allPlants');
+        // const response = await fetch('http://localhost:3333/plants/allPlants');
 
         if (!response.ok) {
             throw new Error('Erro ao obter os dados do servidor');
