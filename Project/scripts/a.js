@@ -2,22 +2,22 @@ document.addEventListener('DOMContentLoaded', async () => {
     const divPlantas = document.getElementById('plantas');
 
     try {
-        // Fazendo a requisição ao servidor
-        const response = await fetch('https://horto-florestal-backend.onrender.com/plants/allPlants');
+        // const response = await fetch('https://horto-florestal-backend.onrender.com/plants/allPlants');
+        const response = await fetch('http://localhost:3333/plants/allPlants');
 
         if (!response.ok) {
             throw new Error('Erro ao obter os dados do servidor');
         }
 
-        const data = await response.json(); // Convertendo a resposta para JSON
+        const data = await response.json();
+        console.log(data);
 
-        // Manipulando os dados recebidos
         data.forEach((planta) => {
             const div = document.createElement('div');
             div.classList.add('planta');
-            const imagem = document.createElement('div'); // div imagem
+            const imagem = document.createElement('div');
             imagem.classList.add('imagem');
-            const descricao = document.createElement('div'); // div descricao
+            const descricao = document.createElement('div');
             descricao.classList.add('descricao');
 
             descricao.innerHTML = `
