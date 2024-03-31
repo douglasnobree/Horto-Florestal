@@ -81,6 +81,26 @@ ul li.item-menu a .icon > i {
 }
 /* ---------------------------------------------------------------------------------------- */
 
+<<<<<<< HEAD
+header{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.cabeçalho-link{
+    display: flex;
+    gap: 3rem;
+    font-weight: 300;
+    cursor: pointer;
+
+}
+
+.cabeçalho-link a{
+=======
 .cabeçalhoDiv {
     display: flex;
     justify-content: space-between;
@@ -108,10 +128,33 @@ ul li.item-menu a .icon > i {
 }
 
 .cabeçalho-link a {
+>>>>>>> 0ee421f94ad47be7f171b8258e4d8e701e096fb9
     color: rgb(0, 182, 0);
     font-size: 16px;
 }
 
+<<<<<<< HEAD
+.cabeçalho-link a :hover{
+    color: rgb(0, 0, 0);
+    transition: 0.3s all;
+}
+
+.logo{
+    height: 80px;
+    width: 80px;
+    background: transparent;
+    border: 2px solid rgb(0, 255, 64);
+    color: rgb(118, 150, 2);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+button{
+=======
 .logo {
     height: 80px;
     width: 80px;
@@ -121,6 +164,7 @@ ul li.item-menu a .icon > i {
 }
 
 button {
+>>>>>>> 0ee421f94ad47be7f171b8258e4d8e701e096fb9
     color: rgb(0, 182, 9);
     background: transparent;
     border: solid 2px rgb(0, 182, 9);
@@ -131,12 +175,23 @@ button {
     cursor: pointer;
 }
 
+<<<<<<< HEAD
+button:hover{
+=======
 button:hover {
+>>>>>>> 0ee421f94ad47be7f171b8258e4d8e701e096fb9
     background-color: rgb(0, 155, 21);
     color: rgb(0, 155, 21);
     transition: 0.5s;
 }
 
+<<<<<<< HEAD
+.container-text{
+    padding: 150px 0 0 130px;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+=======
 .container-text {
     padding: 150px 0 0 130px;
 }
@@ -173,3 +228,4 @@ button:hover {
     border-radius: 15px;
     cursor: pointer;
 }
+>>>>>>> 0ee421f94ad47be7f171b8258e4d8e701e096fb9
