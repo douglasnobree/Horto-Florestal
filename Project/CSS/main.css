@@ -148,7 +148,9 @@ button:hover {
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 20px;
+    margin-top: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
 .imagem{
