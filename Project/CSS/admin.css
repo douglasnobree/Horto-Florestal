@@ -7,7 +7,7 @@
     list-style: none;
 }
 
-body{
+body {
     overflow: hidden;
 }
 
@@ -81,45 +81,42 @@ ul li.item-menu a .icon > i {
     margin-left: 20px;
 }
 
-.Content{
+.Content {
     width: 100%;
     height: 100%;
     background-color: rgb(91, 73, 228);
 }
 
-.contentbody{
+.contentbody {
     width: 100%;
     height: 100%;
 }
 
-.createNewPlant{
+.createNewPlant {
     background-color: grey;
     width: 100%;
     height: 100%;
 }
-.formCreateNewPlant{
+.formCreateNewPlant {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }
-.formCreateNewPlant label{
+.formCreateNewPlant label {
     font-weight: 800;
 }
-.formCreateNewPlant input{
+.formCreateNewPlant input {
     width: 50%;
     height: 30px;
     margin: 10px;
     padding: 10px;
     border-radius: 100px;
-
 }
 
-.formCreateNewPlant button{
+.formCreateNewPlant button {
     width: 50%;
     height: 30px;
-
 }
