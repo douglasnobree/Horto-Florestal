@@ -35,6 +35,5 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     } catch (error) {
         console.error('Erro ao obter/plantar plantas:', error);
-        // Tratar o erro, se necessário
     }
 });
