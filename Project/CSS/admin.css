@@ -1,11 +1,11 @@
-* { 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
     text-decoration: none;
     list-style: none;
-}  /*Façam comentários*/
+}
 
 body {
     overflow: hidden;
@@ -16,7 +16,6 @@ nav.menu-lateral {
     height: 100%;
     background-color: rgb(91, 73, 228);
     padding: 20px 1 20px 1%;
-
     top: 0;
     left: 0;
     overflow: hidden;
@@ -25,7 +24,6 @@ nav.menu-lateral {
 
 .container {
     display: flex;
-
     height: 100vh;
 }
 
