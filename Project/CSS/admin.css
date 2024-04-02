@@ -131,6 +131,9 @@ ul li.item-menu a .icon > i {
     width: 125px;
     height: 125px;
     margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -147,6 +150,16 @@ ul li.item-menu a .icon > i {
     border-radius: 50px;
     border-style: none;
     background-color: rgb(228, 73, 73);
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
     align-self: flex-end; /* Isso alinha o botão no final da div */
     cursor: pointer;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+}
+
+.Plant button:hover {
+    background-color: rgb(72, 17, 17);
+    transition: 0.5s;
+    color: red;
 }
