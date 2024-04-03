@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     PlantaDiv.remove();
                 } catch (error) {
                     console.error('Erro ao deletar a planta:', error);
+                    window.location.reload();
                 }
             });
 

@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const password = formData.get('password');
 
         const response = await fetch(
-            'https://horto-florestal-backend.onrender.com/plants/login',
+            'https://hortoflorestal-nestjs.onrender.com/users/login',
             {
                 method: 'POST',
                 headers: {
@@ -18,9 +18,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
         );
         const data = await response.json();
-        console.log(data);
         const token = data.token;
-        if (token) {
+        if (response.status === 200) {
             alert('Login realizado com sucesso!');
             localStorage.setItem('token', token);
             window.location.href = '/Project/pages/admin/adminPage.html';
