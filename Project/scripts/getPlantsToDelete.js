@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     console.log('oi');
     try {
         const response = await fetch(
-            'https://horto-florestal-backend.onrender.com/plants/allPlants'
+            'https://hortoflorestal-nestjs.onrender.com/plants/allPlants'
         );
-        // const response = await fetch('http://localhost:3333/plants/allPlants');
+        // const response = await fetch('http://159.112.182.217:3333/plants/listAllPlants');
 
         if (!response.ok) {
             throw new Error('Erro ao obter os dados do servidor');
@@ -38,11 +38,16 @@ document.addEventListener('DOMContentLoaded', async () => {
             btnDelete.addEventListener('click', async () => {
                 try {
                     const response = await fetch(
-                        `https://horto-florestal-backend.onrender.com/plants/deletePlant/${planta.id}`,
+                        `https://hortoflorestal-nestjs.onrender.com/plants/deletePlant?id=${planta.id}`,
                         {
                             method: 'DELETE',
                         }
                     );
+                    //     `http://159.112.182.217:3333/plants/deletePlant?id=${planta.id}`,
+                    //     {
+                    //         method: 'DELETE',
+                    //     }
+                    // );
 
                     if (!response.ok) {
                         throw new Error('Erro ao deletar a planta');
@@ -51,7 +56,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     PlantaDiv.remove();
                 } catch (error) {
                     console.error('Erro ao deletar a planta:', error);
-                    window.location.reload();
+                    
                 }
             });
 
