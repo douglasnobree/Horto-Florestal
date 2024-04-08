@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             img_url,
         };
         const response = await fetch(
-            'https://hortoflorestal-nestjs.onrender.com/plants/createNewPlant',
+            'http://159.112.182.217:3333/plants/createNewPlant',
             {
                 method: 'POST',
                 headers: {

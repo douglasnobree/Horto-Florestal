@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     try {
         const response = await fetch(
-            'https://hortoflorestal-nestjs.onrender.com/plants/listAllPlants'
+            'http://159.112.182.217:3333/plants/listAllPlants'
         );
         // const response = await fetch('http://localhost:3333/plants/allPlants');
 

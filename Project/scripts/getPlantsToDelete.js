@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     console.log('oi');
     try {
         const response = await fetch(
-            'https://hortoflorestal-nestjs.onrender.com/plants/listAllPlants'
+            'http://159.112.182.217:3333/plants/listAllPlants'
         );
         // const response = await fetch('http://159.112.182.217:3333/plants/listAllPlants');
 
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             btnDelete.addEventListener('click', async () => {
                 try {
                     const response = await fetch(
-                        `https://hortoflorestal-nestjs.onrender.com/plants/deletePlant?id=${planta.id}`,
+                        `http://159.112.182.217:3333/plants/deletePlant?id=${planta.id}`,
                         {
                             method: 'DELETE',
                         }
