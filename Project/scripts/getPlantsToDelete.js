@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     console.log('oi');
     try {
         const response = await fetch(
-            'http://159.112.182.217:3333/plants/listAllPlants'
+            'https://hortoflorestal.cactustheca.shop/plants/listAllPlants'
         );
         // const response = await fetch('http://159.112.182.217:3333/plants/listAllPlants');
 
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             btnDelete.addEventListener('click', async () => {
                 try {
                     const response = await fetch(
-                        `http://159.112.182.217:3333/plants/deletePlant?id=${planta.id}`,
+                        `https://hortoflorestal.cactustheca.shop/plants/deletePlant?id=${planta.id}`,
                         {
                             method: 'DELETE',
                         }
