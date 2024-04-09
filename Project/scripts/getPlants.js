@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     try {
         const response = await fetch(
-            'https://hortoflorestal.cactustheca.shop/plants/listAllPlants'
+            'https://backend.cactustheca.shop/plants/listAllPlants'
         );
         // const response = await fetch('http://localhost:3333/plants/allPlants');
 

@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             img_url,
         };
         const response = await fetch(
-            'https://hortoflorestal.cactustheca.shop/plants/createNewPlant',
+            'https://backend.cactustheca.shop/plants/createNewPlant',
             {
                 method: 'POST',
                 headers: {

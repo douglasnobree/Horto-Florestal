@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const password = formData.get('password');
 
         const response = await fetch(
-            'https://hortoflorestal.cactustheca.shop/users/login',
+            'https://backend.cactustheca.shop/users/login',
             {
                 method: 'POST',
                 headers: {
