@@ -32,8 +32,17 @@ jobs:
           -H "Content-Type: application/json" \
           -d '{}' \
           "https://portainer.cactustheca.shop/api/stacks/5/stop?endpointId=1"
+      
+      - name: Wait 5 seconds
+        run: sleep 10s
+      
+      - name: Start containers in Portainer
+        run: |
+          curl -X POST \
           -H "x-api-key: ${{ secrets.PORTAINER_API_TOKEN }}" \
           -H "Content-Type: application/json" \
           -d '{}' \
           "https://portainer.cactustheca.shop/api/stacks/5/start?endpointId=1"
+      
+      
           
