@@ -27,7 +27,8 @@ jobs:
 
       - name: Restart containers in Portainer
         run: |
-          curl -X POST -H "Authorization: Bearer ${{ secrets.PORTAINER_API_TOKEN }}" \
+          curl -X POST -H "X-API-Key: ${{ secrets.PORTAINER_API_TOKEN }}" \
           -H "Content-Type: application/json" \
           -d '{"type":1}' \
-          https://portainer.cactustheca.shop/api/endpoints/1/docker/containers/restart
+          https://portainer.cactustheca.shop/api/stacks/5/stop?endpointId=1
+          https://portainer.cactustheca.shop/api/stacks/5/start?endpointId=1
