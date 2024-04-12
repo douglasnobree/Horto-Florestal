@@ -12,12 +12,13 @@ body {
 }
 
 nav.menu-lateral {
+    position: sticky;
+    top: 0;
     width: 80px;
     height: 100%;
     background-color: rgb(73, 228, 156);
     padding: 20px 1 20px 1%;
 
-    top: 0;
     left: 0;
     transition: 0.2s;
 }
@@ -170,4 +171,44 @@ button:hover {
     width: 250px;
     border-radius: 15px;
     cursor: pointer;
+}
+
+.hidePage {
+    display: none;
+}
+
+.plantaClicada{
+    width: 100%;
+    height: 100%;
+}
+
+.plantaClicadaPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.planta-img{
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
+}
+
+.planta-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.planta-info h2{
+    font-size: 30px;
+}
+.planta-info p{
+    font-size: 17px;
+}
+
+.planta-info p strong{
+    font-size: 20px;
 }
