@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             planta.addEventListener('click', async () => {
                 const plantID = planta.dataset.plantID;
                 const responsePlant = await fetch(
-                    'http://localhost:3333/plants/listPlantByID?id=' + plantID
+                    'https://backend.cactustheca.shop/plants/listPlantByID?id=' + plantID
                 );
                 const jsonPlant = await responsePlant.json();
                 console.log(jsonPlant);
