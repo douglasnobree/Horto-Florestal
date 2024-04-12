@@ -6,10 +6,10 @@
             name="viewport"
             content="width=device-width, initial-scale=1.0"
         />
-        <title>Deletar Plantas</title>
+        <title>Admin Page</title>
         <link
             rel="stylesheet"
-            href="/Project/CSS/admin.css"
+            href="/Project/AdminPage/admin.css"
         />
         <link
             rel="stylesheet"
@@ -19,64 +19,62 @@
     <body>
         <div class="container">
             <nav class="menu-lateral">
-                <div class="btn-expandir"><i class="bi bi-list"></i></div>
-                <!-- butão que expande a lista e sua logo (bibi?)-->
-
+                <div class="btn-expandir"><i class="bi bi-list"></i></div> <!-- butão que expande a lista e sua logo -->
                 <ul>
-                    <li class="item-menu">
+                    <li class="item-menu ativo">
                         <a href="/Project/pages/admin/adminPage.html">
                             <span class="icon">
-                                <i class="bi bi-house"> </i>
-                            </span>
+                                <i class="bi bi-house">
+                                </i>
+                                </span>
                             <span class="txt-link">Inicio</span>
                         </a>
                     </li>
                     <li class="item-menu">
                         <a href="/Project/pages/admin/createPlants.html">
                             <span class="icon">
-                                <i class="bi bi-plus-square"> </i>
-                            </span>
+                                <i class="bi bi-plus-square">
+                                </i>
+                                </span>
                             <span class="txt-link">Criar Plantas</span>
                         </a>
                     </li>
-                    <li class="item-menu ativo">
+                    <li class="item-menu">
                         <a href="/Project/pages/admin/deletePlants.html">
                             <span class="icon">
-                                <i class="bi bi-dash-circle"> </i>
-                            </span>
+                                <i class="bi bi-dash-circle">
+                                </i>
+                                </span>
                             <span class="txt-link">Apagar Plantas</span>
                         </a>
                     </li>
                     <li class="item-menu">
                         <a href="#">
                             <span class="icon">
-                                <i class="bi bi-calendar"> </i>
-                            </span>
+                                <i class="bi bi-calendar">
+                                </i>
+                                </span>
                             <span class="txt-link">Criar Eventos</span>
                         </a>
                     </li>
                     <li class="item-menu">
                         <a href="#">
                             <span class="icon">
-                                <i class="bi bi-calendar-x"> </i>
-                            </span>
+                                <i class="bi bi-calendar-x">
+                                </i>
+                                </span>
                             <span class="txt-link">Apagar Eventos</span>
                         </a>
                     </li>
                 </ul>
             </nav>
             <div class="Content">
-                <h1>Deletar Plantas</h1>
+                <h1>Bem vindo a pagina inicial do administrador!</h1>
                 <div class="contentbody">
-                    <div
-                        class="boxPlants"
-                        id="boxPlants"
-                    >
-                        <!-- Plantas vao ser adicionadas dinamicamente -->
-                    </div>
+                    <div>oi</div>
                 </div>
             </div>
         </div>
+        <script src="/Project/scripts/main.js"></script>
     </body>
-    <script src="/Project/scripts/getPlantsToDelete.js"></script>
 </html>
