@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             rega,
         };
         const response = await fetch(
-            'http://localhost:3333/plants/createNewPlant',
+            'https://backend.cactustheca.shop/plants/createNewPlant',
             {
                 method: 'POST',
                 headers: {
