@@ -8,19 +8,102 @@
 }
 
 body {
-    height: 100vh;
+    font-family: "Lato", sans-serif;
 }
 
-nav.menu-lateral {
-    position: sticky;
-    top: 0;
-    width: 80px;
-    height: 100%;
-    background-color: rgb(73, 228, 156);
-    padding: 20px 1 20px 1%;
 
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(0, 160, 61);
+    padding: 40px 0;
+}
+
+.dark{
+    display: flex;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2; /* Alterado para 2 para ficar acima do botão */
+    top: 0;
     left: 0;
-    transition: 0.2s;
+    background-color: #06b983;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #4b4b4b;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #005828;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    z-index: 3; /* Alterado para 3 para ficar acima do menu */
+    top: 15px; /* Adicionado para posicionar o botão corretamente */
+    left: 10px; /* Adicionado para posicionar o botão corretamente */
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+body.dark-mode {
+    background-color: #222;
+    color: #FFF;
+}
+
+.header.dark-mode {
+    background-color: #333;
+}
+
+.sidebar.dark-mode {
+    background-color: #333;
+}
+
+.sidebar.dark-mode a {
+    color: #FFF;
+}
+
+.openbtn.dark-mode {
+    background-color: #444;
 }
 
 .container {
@@ -29,57 +112,7 @@ nav.menu-lateral {
     height: 100vh;
 }
 
-nav.menu-lateral:hover {
-    width: 300px;
-}
 
-.btn-expandir {
-    width: 100%;
-    padding-left: 15px;
-}
-
-.btn-expandir > i {
-    color: white;
-    font-size: 40px;
-    cursor: pointer;
-}
-
-ul {
-    height: 100%;
-    list-style-type: none;
-}
-
-ul li.item-menu {
-    transition: 0.2s;
-}
-
-ul li.ativo {
-    background-color: rgb(0, 100, 17);
-}
-
-ul li.item-menu:hover {
-    background: rgb(0, 100, 17);
-}
-
-ul li.item-menu a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 10px 4%;
-    display: flex;
-    margin-bottom: 20px;
-    line-height: 40px;
-}
-
-ul li.item-menu a .txt-link {
-    margin-left: 40px;
-}
-
-ul li.item-menu a .icon > i {
-    font-size: 30px;
-
-    margin-left: 20px;
-}
 /* ---------------------------------------------------------------------------------------- */
 
 .cabeçalhoDiv {
@@ -122,9 +155,9 @@ ul li.item-menu a .icon > i {
 }
 
 button {
-    color: rgb(0, 182, 9);
+    color: rgb(32, 34, 33);
     background: transparent;
-    border: solid 2px rgb(0, 182, 9);
+    border: solid 2px rgb(107, 112, 108);
     padding: 5px;
     border-radius: 15px;
     font-size: 16px;
@@ -133,8 +166,8 @@ button {
 }
 
 button:hover {
-    background-color: rgb(0, 155, 21);
-    color: rgb(0, 155, 21);
+    background-color: rgb(50, 53, 51);
+    color: rgb(185, 187, 185);
     transition: 0.5s;
 }
 
@@ -212,3 +245,4 @@ button:hover {
 .planta-info p strong{
     font-size: 20px;
 }
+

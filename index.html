@@ -21,54 +21,31 @@
         />
     </head>
     <body>
-        <div class="container">
-            <nav class="menu-lateral">
-                <div class="btn-expandir"><i class="bi bi-list"></i></div>
-                <!-- button que expande a lista e sua logo -->
 
-                <ul>
-                    <li class="item-menu ativo">
-                        <a href="#">
-                            <span class="icon"
-                                ><i class="bi bi-house"></i
-                            ></span>
-                            <span class="txt-link">Home</span>
-                        </a>
-                    </li>
-                    <li class="item-menu">
-                        <a href="https://maps.app.goo.gl/kTG8isDUPL3hHQk98">
-                            <span class="icon"
-                                ><i class="bi bi-geo-alt-fill"></i
-                            ></span>
-                            <span class="txt-link">Local</span>
-                        </a>
-                    </li>
-                    <li class="item-menu">
-                        <a href="Project/pages/listAllPlants.html">
-                            <span class="icon"
-                                ><i class="bi bi-flower3"></i
-                            ></span>
-                            <span class="txt-link">Plantas</span>
-                        </a>
-                    </li>
-                    <li class="item-menu">
-                        <a href="#">
-                            <span class="icon"
-                                ><i class="bi bi-calendar"></i
-                            ></span>
-                            <span class="txt-link">Eventos</span>
-                        </a>
-                    </li>
-                </ul>
-                <a href="a">a</a>
-            </nav>
+            <div class="header">
+                <button class="openbtn" id="button" onclick="openNav()"> ☰ Menu </button>
+                    <div class="dark"> 
+                        <button id="dark-mode-toggle" class="dark-mode-toggle">Modo Noturno</button> 
+                        <button ><a href="Project/pages/loginPage.html">Administrador</a></button>
+                    </div>
+                <div id="mySidebar" class="sidebar">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+                    <a href="#">Home</a>
+                    <a href="#">Local</a>
+                    <a href="#">Plantas e Animais</a>
+                    <a href="#">Eventos</a>
+                    <!-- Adicione seus novos links aqui -->
+                    <a href="link_para_administrador">Administrador</a>
+                    <a href="link_para_whatsapp">Whatsapp</a>
+                    <a href="link_para_femaje">Femaje</a>
 
+                </div>
+              </div>
+                <div id="main">
+                </div>
             <!-- --------------------------------------------------------------------------------------------------------------- -->
             <div class="containercabelhacocontent">
                 <div class="cabeçalhoDiv">
-                    <div class="logo">
-                        <a href=""></a>
-                    </div>
                     <div class="cabeçalho-link">
                         <li>
                             <a
@@ -77,13 +54,6 @@
                                 >Administrador</a
                             >
                         </li>
-                        <li>
-                            <a href="">Whatsapp</a>
-                        </li>
-                        <li>
-                            <a href="">Site do IFCE</a>
-                        </li>
-                        <a href=""><button>Equipe</button></a>
                     </div>
                 </div>
                 <!-- --------------------------AQUI QUE FICA O CONTEUDO DA PAGINA PRINCIPAL-------------------------------------------------- -->
@@ -109,8 +79,7 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-        <script src="Project/scripts/main.js"></script>
+        <script src="Project/scripts/togglesidebar.js"></script>
     </body>
 </html>
