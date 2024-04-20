@@ -44,19 +44,24 @@ document.addEventListener('DOMContentLoaded', async () => {
             descricaoTitulo.textContent = planta.nome;
         
             const descricaoTexto = document.createElement('p');
-            descricaoTexto.textContent = planta.descricao;
+            const formatedDescription = planta.descricao.slice(0, 90);
+            descricaoTexto.textContent = formatedDescription + (planta.descricao.length > 90 ? '...' : '');
+
+            
         
             const infos = document.createElement('div');
             infos.classList.add('infos');
         
             const nomeCientifico = document.createElement('p');
-            nomeCientifico.innerHTML = `Nome científico: <span>${planta.nome_cientifico}</span>`;
+            nomeCientifico.innerHTML = `<strong>Nome científico:</strong> <span>${planta.especie}</span>`;
         
             const usoMedicinal = document.createElement('p');
-            usoMedicinal.innerHTML = `Uso medicinal: <span>${planta.uso_medicinal ? 'Sim' : 'Não'}</span>`;
+            usoMedicinal.innerHTML = `<strong>Uso medicinal:</strong> <span>${planta.uso_medicinal ? 'Sim' : 'Não'}</span>`;
         
             const descricaoCompleta = document.createElement('p');
-            descricaoCompleta.innerHTML = `Descrição: <span>${planta.descricao_completa}</span>`;
+            const descricaoCompletaBack = planta.descricao.slice(0, 150);
+            descricaoCompleta.innerHTML = `<strong>Descrição:</strong> <span>${descricaoCompletaBack}${planta.descricao.length > 150 ? '...' : ''}</span>`;
+            
         
             const button = document.createElement('button');
             button.textContent = 'Ver mais informações';
