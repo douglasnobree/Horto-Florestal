@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 utilidade,
             };
             const response = await fetch(
-                'http://localhost:3333/plants/editPlant',
+                'https://backend.cactustheca.shop/plants/editPlant',
                 {
                     method: 'PUT',
                     headers: {

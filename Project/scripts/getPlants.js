@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const response = await fetch(
             'https://backend.cactustheca.shop/plants/listAllPlants'
         );
-        // const response = await fetch('http://localhost:3333/plants/allPlants');
+        // const response = await fetch('http://localhost:3333/plants/listAllPlants');
 
         if (!response.ok) {
             throw new Error('Erro ao obter os dados do servidor');
