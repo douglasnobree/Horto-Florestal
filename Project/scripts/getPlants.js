@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             nomeCientifico.innerHTML = `<strong>Nome científico:</strong> <span>${planta.especie}</span>`;
         
             const usoMedicinal = document.createElement('p');
-            usoMedicinal.innerHTML = `<strong>Uso medicinal:</strong> <span>${planta.uso_medicinal ? 'Sim' : 'Não'}</span>`;
+            usoMedicinal.innerHTML = `<strong>Uso medicinal:</strong> <span>${planta.medicinal ? 'Sim' : 'Não'}</span>`;
         
             const descricaoCompleta = document.createElement('p');
             const descricaoCompletaBack = planta.descricao.slice(0, 150);
