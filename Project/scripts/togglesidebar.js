@@ -1,20 +1,15 @@
-function openNav() {
-    document.getElementById("mySidebar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.getElementById("button").classList.add('hide');
-    console.log("Abacaxi")
-}
+const burguerbutton = document.getElementById('burguer-button');
+const sidebar = document.getElementById('sidebar');
 
-function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-    setTimeout(function() {
-        document.getElementById("button").classList.remove('hide');
-    }, 200); // Atraso de milisegundos para o button da sidebar
-}
-
-document.getElementById('dark-mode-toggle').addEventListener('click', function () {
-    ['body', 'header', 'sidebar', 'openbtn'].forEach(function (elementId) {
-        document.querySelector(elementId).classList.toggle('dark-mode');
-    });
+burguerbutton.addEventListener('click', () => {
+    if (window.innerWidth <= 700) {
+        console.log('click');
+        if (!sidebar.classList.contains('is-active')) {
+            sidebar.classList.add('is-active');
+            sidebar.style.width = '250px';
+        } else {
+            sidebar.classList.remove('is-active');
+            sidebar.style.width = '0px';
+        }
+    }
 });

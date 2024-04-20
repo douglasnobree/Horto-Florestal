@@ -10,47 +10,65 @@
         <title>Plantas Do Horto</title>
     </head>
     <body>
+        <header>
+            <div class="header-container">
+                <div class="menu">
+                    <a href="../../index.html" class="logo-name"
+                        ><span class="logo">Horto</span></a
+                    ><!-- AQUI FICA A LOGO -->
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="../../index.html" class="nav-btn">Inicio</a>
+                            </li>
+                            <li>
+                                <a
+                                    href="Project/pages/listAllPlants.html"
+                                    class="nav-btn"
+                                    >Plantas</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://maps.app.goo.gl/kTG8isDUPL3hHQk98"
+                                    target="_blank"
+                                    class="nav-btn"
+                                    >Localização</a
+                                >
+                            </li>
+                            <li><a href="#" class="nav-btn">Eventos</a></li>
+                        </ul>
+                    </nav>
+                    <div class="btn-login">
+                        <a class="fancy" href="/Project/pages/loginPage.html">
+                            <span class="top-key"></span>
+                            <span class="text">Login</span>
+                            <span class="bottom-key-1"></span>
+                            <span class="bottom-key-2"></span>
+                        </a>
+                    </div>
+                    <div class="burguer" id="burguer-button">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div id="sidebar" class="sidebar">
+                        <a href="#">Home</a>
+                        <a href="#">Local</a>
+                        <a href="#">Plantas e Animais</a>
+                        <a href="#">Eventos</a>
+                        <!-- Adicione seus novos links aqui -->
+                        <a href="#">Administrador</a>
+                        <a href="#">Whatsapp</a>
+                        <a href="#">Femaje</a>
+                    </div>
+                </div>
+                <!-- menu -->
+            </div>
+            <!-- header-container -->
+        </header>
+
         <div class="container">
-            <nav class="menu-lateral">
-                <div class="btn-expandir"><i class="bi bi-list"></i></div>
-                <!-- butão que expande a lista e sua logo (bi bi?)-->
-
-                <ul>
-                    <li class="item-menu">
-                        <a href="/index.html">
-                            <span class="icon">
-                                <i class="bi bi-house"> </i>
-                            </span>
-                            <span class="txt-link">Inicio</span>
-                        </a>
-                    </li>
-                    <li class="item-menu">
-                        <a href="https://maps.app.goo.gl/kTG8isDUPL3hHQk98">
-                            <span class="icon">
-                                <i class="bi bi-geo-alt-fill"> </i>
-                            </span>
-                            <span class="txt-link">Local</span>
-                        </a>
-                    </li>
-                    <li class="item-menu ativo">
-                        <a href="listAllPlants.html">
-                            <span class="icon">
-                                <i class="bi bi-tree-fill"> </i>
-                            </span>
-                            <span class="txt-link">Plantas</span>
-                        </a>
-                    </li>
-                    <li class="item-menu">
-                        <a href="#">
-                            <span class="icon">
-                                <i class="bi bi-calendar"> </i>
-                            </span>
-                            <span class="txt-link">Eventos</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-
             <div id="plantaClicada" class="plantaClicada hidePage">
                 <div class="plantaClicadaPage">
                     <!-- Conteudo sendo adicionado Pelo JS -->
@@ -63,5 +81,6 @@
         </div>
         <script src="/Project/scripts/getPlants.js"></script>
         <script src="/Project/scripts/showPageByUrl.js"></script>
+        <script src="../scripts/togglesidebar.js"></script>
     </body>
 </html>

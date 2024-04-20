@@ -3,82 +3,90 @@
     <head>
         <title>Horto Florestal</title>
         <meta charset="UTF-8" />
-        <meta
-            http-equiv="X-UA-Compatible"
-            content="IE-edge"
-        />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-        />
+        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="Project/CSS/main.css" />
         <link
             rel="stylesheet"
-            href="Project/CSS/main.css"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-        />
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     </head>
     <body>
+        <header>
+            <div class="header-container">
+                <div class="menu">
+                    <a href="index.html" class="logo-name"
+                        ><span class="logo">Horto</span></a
+                    ><!-- AQUI FICA A LOGO -->
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="index.html" class="nav-btn">Inicio</a>
+                            </li>
+                            <li>
+                                <a
+                                    href="Project/pages/listAllPlants.html"
+                                    class="nav-btn"
+                                    >Plantas</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://maps.app.goo.gl/kTG8isDUPL3hHQk98"
+                                    target="_blank"
+                                    class="nav-btn"
+                                    >Localização</a
+                                >
+                            </li>
+                            <li><a href="#" class="nav-btn">Eventos</a></li>
+                        </ul>
+                    </nav>
+                    <div class="btn-login">
+                        <a class="fancy" href="Project/pages/loginPage.html">
+                            <span class="top-key"></span>
+                            <span class="text">Login</span>
+                            <span class="bottom-key-1"></span>
+                            <span class="bottom-key-2"></span>
+                        </a>
+                    </div>
+                    <div class="burguer" id="burguer-button">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div id="sidebar" class="sidebar">
+                        <a href="#">Home</a>
+                        <a href="#">Local</a>
+                        <a href="#">Plantas e Animais</a>
+                        <a href="#">Eventos</a>
+                        <!-- Adicione seus novos links aqui -->
+                        <a href="#">Administrador</a>
+                        <a href="#">Whatsapp</a>
+                        <a href="#">Femaje</a>
+                    </div>
+                </div>
+                <!-- menu -->
+            </div>
+            <!-- header-container -->
+        </header>
+        <!-- --------------------------------------------------------------------------------------------------------------- -->
 
-            <div class="header">
-                <button class="openbtn" id="button" onclick="openNav()"> ☰ Menu </button>
-                    <div class="dark"> 
-                        <button id="dark-mode-toggle" class="dark-mode-toggle">Modo Noturno</button> 
-                        <button ><a href="Project/pages/loginPage.html">Administrador</a></button>
-                    </div>
-                <div id="mySidebar" class="sidebar">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
-                    <a href="#">Home</a>
-                    <a href="#">Local</a>
-                    <a href="#">Plantas e Animais</a>
-                    <a href="#">Eventos</a>
-                    <!-- Adicione seus novos links aqui -->
-                    <a href="link_para_administrador">Administrador</a>
-                    <a href="link_para_whatsapp">Whatsapp</a>
-                    <a href="link_para_femaje">Femaje</a>
-
-                </div>
-              </div>
-                <div id="main">
-                </div>
-            <!-- --------------------------------------------------------------------------------------------------------------- -->
-            <div class="containercabelhacocontent">
-                <div class="cabeçalhoDiv">
-                    <div class="cabeçalho-link">
-                        <li>
-                            <a
-                                style="color: rgb(255, 0, 60)"
-                                href="Project/pages/loginPage.html"
-                                >Administrador</a
-                            >
-                        </li>
-                    </div>
-                </div>
-                <!-- --------------------------AQUI QUE FICA O CONTEUDO DA PAGINA PRINCIPAL-------------------------------------------------- -->
-                <div class="content">
-                    <div class="content-text">
-                        <h1>Horto Florestal</h1>
-                        <p>
-                            O Horto Florestal é um espaço de preservação
-                            ambiental localizado no campus do IFCE de Tabuleiro
-                            do Norte. O local é aberto ao público e conta com
-                            uma grande variedade de plantas e árvores nativas da
-                            região. Além disso, o Horto Florestal é um espaço de
-                            pesquisa e educação ambiental, onde são realizadas
-                            atividades de conscientização e preservação do meio
-                            ambiente.
-                        </p>
-                        <div class="content-img">
-                            <img
-                                src="#"
-                                alt="Horto Florestal"
-                            />
-                        </div>
-                    </div>
+        <div class="content">
+            <div class="content-text">
+                <h1>Horto Florestal</h1>
+                <p>
+                    O Horto Florestal é um espaço de preservação ambiental
+                    localizado no campus do IFCE de Tabuleiro do Norte. O local
+                    é aberto ao público e conta com uma grande variedade de
+                    plantas e árvores nativas da região. Além disso, o Horto
+                    Florestal é um espaço de pesquisa e educação ambiental, onde
+                    são realizadas atividades de conscientização e preservação
+                    do meio ambiente.
+                </p>
+                <div class="content-img">
+                    <img src="#" alt="Horto Florestal" />
                 </div>
             </div>
+        </div>
 
         <script src="Project/scripts/togglesidebar.js"></script>
     </body>
