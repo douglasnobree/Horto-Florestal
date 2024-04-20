@@ -15,25 +15,77 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.log(data);
 
         data.forEach((planta) => {
-            const div = document.createElement('div');
-            div.classList.add('planta');
-            div.dataset.plantID = planta.id;
+            const containerCard = document.createElement('div');
+            containerCard.classList.add('containerCard');
+        
+            const flipCard = document.createElement('div');
+            flipCard.classList.add('flip-card');
+        
+            const flipCardInner = document.createElement('div');
+            flipCardInner.classList.add('flip-card-inner');
+        
+            const flipCardFront = document.createElement('div');
+            flipCardFront.classList.add('flip-card-front');
+        
+            const flipCardBack = document.createElement('div');
+            flipCardBack.classList.add('flip-card-back');
+        
             const imagem = document.createElement('div');
             imagem.classList.add('imagem');
             const descricao = document.createElement('div');
             descricao.classList.add('descricao');
-
-            descricao.innerHTML = `
-                <h2>${planta.nome}</h2>
-                <p>${planta.descricao}</p>
-            `;
-            imagem.innerHTML = `
-                <img src="${planta.img_url}" alt="${planta.nome}">
-            `;
-            div.appendChild(imagem);
-            div.appendChild(descricao);
-            divPlantas.appendChild(div);
+        
+            const flipCardImage = document.createElement('img');
+            flipCardImage.classList.add('flip-card-image');
+            flipCardImage.src = planta.img_url;
+            flipCardImage.alt = planta.nome;
+        
+            const descricaoTitulo = document.createElement('h2');
+            descricaoTitulo.textContent = planta.nome;
+        
+            const descricaoTexto = document.createElement('p');
+            descricaoTexto.textContent = planta.descricao;
+        
+            const infos = document.createElement('div');
+            infos.classList.add('infos');
+        
+            const nomeCientifico = document.createElement('p');
+            nomeCientifico.innerHTML = `Nome científico: <span>${planta.nome_cientifico}</span>`;
+        
+            const usoMedicinal = document.createElement('p');
+            usoMedicinal.innerHTML = `Uso medicinal: <span>${planta.uso_medicinal ? 'Sim' : 'Não'}</span>`;
+        
+            const descricaoCompleta = document.createElement('p');
+            descricaoCompleta.innerHTML = `Descrição: <span>${planta.descricao_completa}</span>`;
+        
+            const button = document.createElement('button');
+            button.textContent = 'Ver mais informações';
+        
+            flipCardFront.appendChild(imagem);
+            flipCardFront.appendChild(descricao);
+            imagem.appendChild(flipCardImage);
+            descricao.appendChild(descricaoTitulo);
+            descricao.appendChild(descricaoTexto);
+        
+            flipCardBack.appendChild(infos);
+            infos.appendChild(descricaoTitulo.cloneNode(true));
+            infos.appendChild(nomeCientifico);
+            infos.appendChild(usoMedicinal);
+            infos.appendChild(descricaoCompleta);
+            flipCardBack.appendChild(button);
+        
+            flipCardInner.appendChild(flipCardFront);
+            flipCardInner.appendChild(flipCardBack);
+            flipCard.appendChild(flipCardInner);
+            containerCard.appendChild(flipCard);
+        
+            divPlantas.appendChild(containerCard);
+        
+            button.addEventListener('click', () => {
+                window.location.href = `/Project/pages/listAllPlants.html?id=${planta.id}`;
+            });
         });
+        
 
         // Adiciona evento de click em cada planta para expandir informações
         const plantas = document.querySelectorAll('.planta');
