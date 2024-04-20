@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', async () => {
     const divPlantas = document.getElementById('boxPlants');
+    console.log('oi');
     try {
         const response = await fetch(
             'https://backend.cactustheca.shop/plants/listAllPlants'
@@ -32,29 +33,14 @@ document.addEventListener('DOMContentLoaded', async () => {
             nomePlanta.textContent = planta.nome; 
 
             const btnDelete = document.createElement('button');
-            btnDelete.textContent = 'Delete'; 
+            btnDelete.textContent = 'Edit'; 
             btnDelete.classList.add('btnDelete');
             btnDelete.addEventListener('click', async () => {
                 try {
-                    const response = await fetch(
-                        `https://backend.cactustheca.shop/plants/deletePlant?id=${planta.id}`,
-                        {
-                            method: 'DELETE',
-                        }
-                    );
-                    //     `http://159.112.182.217:3333/plants/deletePlant?id=${planta.id}`,
-                    //     {
-                    //         method: 'DELETE',
-                    //     }
-                    // );
-
-                    if (!response.ok) {
-                        throw new Error('Erro ao deletar a planta');
-                    }
-
-                    PlantaDiv.remove();
+                    window.location.href = `/Project/pages/admin/editPlants.html?id=${planta.id}`;
+                    
                 } catch (error) {
-                    console.error('Erro ao deletar a planta:', error);
+                    console.error('Erro ao direcionar pagina:', error);
                     
                 }
             });

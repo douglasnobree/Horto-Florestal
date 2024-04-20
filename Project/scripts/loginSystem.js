@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         const data = await response.json();
         const token = data.token;
         if (response.status === 200) {
-            alert('Login realizado com sucesso!');
             localStorage.setItem('token', token);
             window.location.href = '/Project/pages/admin/adminPage.html';
         } else {

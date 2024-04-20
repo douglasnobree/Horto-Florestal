@@ -13,6 +13,15 @@ document.addEventListener('DOMContentLoaded', async () => {
         const curiosidades = formData.get('curiosidades');
         const cuidados = formData.get('cuidados');
         const rega = formData.get('rega');
+        const frutiferaValue = formData.get('frutifera');
+        const medicinalValue = formData.get('medicinal');
+        const ornamentalValue = formData.get('ornamental');
+        const tipo = formData.get('tipo');
+        const utilidade = formData.get('utilidade');
+
+        const frutifera = frutiferaValue === 'on';
+        const medicinal = medicinalValue === 'on';
+        const ornamental = ornamentalValue === 'on';
 
         const plant = {
             nome,
@@ -24,7 +33,13 @@ document.addEventListener('DOMContentLoaded', async () => {
             curiosidades,
             cuidados,
             rega,
+            frutifera,
+            medicinal,
+            ornamental,
+            tipo,
+            utilidade,
         };
+
         const response = await fetch(
             'https://backend.cactustheca.shop/plants/createNewPlant',
             {

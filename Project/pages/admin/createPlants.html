@@ -41,6 +41,14 @@
                         </a>
                     </li>
                     <li class="item-menu">
+                        <a href="/Project/pages/admin/editPlants.html">
+                            <span class="icon">
+                                <i class="bi bi-dash-circle"> </i>
+                            </span>
+                            <span class="txt-link">Editar Plantas</span>
+                        </a>
+                    </li>
+                    <li class="item-menu">
                         <a href="#">
                             <span class="icon">
                                 <i class="bi bi-calendar"> </i>
@@ -65,7 +73,7 @@
                         <form
                             action="#"
                             method="POST"
-                            class="formCreateNewPlant"
+                            class="formPlant"
                             id="formCreateNewPlant">
                             <label for="plantName">Nome da Planta:</label>
                             <input
@@ -89,7 +97,6 @@
                                 id="plantDescription"
                                 name="plantDescription"
                                 required />
-
 
                             <label for="plantLocation"
                                 >Localização da Planta:</label
@@ -118,22 +125,45 @@
                             <label for="plantCare"
                                 >Cuidados com a Planta:</label
                             >
-                            <input
-                                type="text"
-                                id="plantCare"
-                                name="cuidados" />
+                            <input type="text" id="plantCare" name="cuidados" />
 
                             <label for="plantWatering"
                                 >Instruções de Rega:</label
                             >
-                            <input
-                                type="text"
-                                id="plantWatering"
-                                name="rega" />
+                            <input type="text" id="plantWatering" name="rega" />
 
+                            
+                            <!-- Novos campos -->
+                            <label for="frutifera">Frutífera:</label>
+                            <input
+                            type="checkbox"
+                            id="frutifera"
+                            name="frutifera" />
+                            
+                            <label for="medicinal">Medicinal:</label>
+                            <input
+                            type="checkbox"
+                            id="medicinal"
+                            name="medicinal" />
+                            
+                            <label for="ornamental">Ornamental:</label>
+                            <input
+                            type="checkbox"
+                            id="ornamental"
+                            name="ornamental" />
+                            
+                            <label for="tipo">Tipo:</label>
+                            <input type="text" id="tipo" name="tipo" />
+                            
+                            <label for="utilidade">Utilidade:</label>
+                            <input
+                            type="text"
+                            id="utilidade"
+                            name="utilidade" />
+                            
                             <label for="plantImageUrl"
-                            >URL da foto da Planta:</label
-                            >   
+                                >URL da foto da Planta:</label
+                            >
                             <input
                                 type="text"
                                 id="plantImageUrl"
