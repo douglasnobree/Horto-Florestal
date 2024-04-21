@@ -141,7 +141,7 @@ ul li.item-menu a .icon > i {
     font-weight: 800;
 }
 
-.Plant button {
+.btnDelete{
     width: 100%;
     height: 30px;
     border-radius: 50px;
@@ -155,10 +155,30 @@ ul li.item-menu a .icon > i {
     font-weight: 900;
 }
 
-.Plant button:hover {
+.btnEdit{
+    width: 100%;
+    height: 30px;
+    border-radius: 50px;
+    border-style: none;
+    background-color: rgb(218, 218, 27);
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+    align-self: flex-end; /* Isso alinha o botão no final da div */
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+}
+
+.btnDelete:hover {
     background-color: rgb(72, 17, 17);
     transition: 0.5s;
     color: red;
+}
+
+.btnEdit:hover {
+    background-color: rgb(95, 106, 34);
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
 }
 
 .hidePage{

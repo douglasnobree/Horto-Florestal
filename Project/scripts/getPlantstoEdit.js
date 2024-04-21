@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             const btnDelete = document.createElement('button');
             btnDelete.textContent = 'Edit'; 
-            btnDelete.classList.add('btnDelete');
+            btnDelete.classList.add('btnEdit');
             btnDelete.addEventListener('click', async () => {
                 try {
                     window.location.href = `/Project/pages/admin/editPlants.html?id=${planta.id}`;
