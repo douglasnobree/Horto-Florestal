@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const img = document.createElement('img');
         img.src = jsonPlant.img_url;
         img.alt = 'Imagem da planta';
+        img.classList.add('img-plant');
         plantaImg.appendChild(img);
 
         const plantaInfo = document.createElement('div');

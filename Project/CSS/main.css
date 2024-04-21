@@ -349,16 +349,20 @@ button:hover {
 }
 
 .plantaClicadaPage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    
 }
 
 .planta-img {
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
     border-radius: 15px;
+}
+
+.img-plant {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
 }
 
 .planta-info {
@@ -438,4 +442,18 @@ button:hover {
         background-color: black;
         margin: 5px 0;
     }
+
+    .planta-img {
+        width: 430px;
+        height: 100%;
+        border-radius: 15px;
+    }
+    
+    .img-plant {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
+
+    
 }
