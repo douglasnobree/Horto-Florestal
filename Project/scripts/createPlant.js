@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', async () => {
-    console.log('createPlant.js loaded');
     const form = document.getElementById('formCreateNewPlant');
     form.addEventListener('submit', async (event) => {
         event.preventDefault();

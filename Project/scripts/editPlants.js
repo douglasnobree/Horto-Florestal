@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     const plantID = urlParams.get('id');
     const divPlantas = document.getElementById('boxPlants');
     const selectedPlant = document.getElementById('selectedPlant');
-    console.log(plantID);
 
     if (plantID) {
         divPlantas.classList.add('hidePage');

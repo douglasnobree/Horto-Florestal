@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', async () => {
     const divPlantas = document.getElementById('boxPlants');
-    console.log('oi');
     try {
         const response = await fetch(
             'https://backend.cactustheca.shop/plants/listAllPlants'
@@ -12,7 +11,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         const data = await response.json();
-        console.log(data);
 
         data.forEach((planta) => {
             const PlantaDiv = document.createElement('div');

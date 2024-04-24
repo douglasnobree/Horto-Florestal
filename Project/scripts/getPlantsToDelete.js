@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         const data = await response.json();
-        console.log(data);
 
         data.forEach((planta) => {
             const PlantaDiv = document.createElement('div');
