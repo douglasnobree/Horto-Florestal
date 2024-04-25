@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', async () => {
+    const token = localStorage.getItem('token');
     const urlParams = new URLSearchParams(window.location.search);
     const plantID = urlParams.get('id');
     const divPlantas = document.getElementById('boxPlants');
@@ -75,6 +76,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json',
+                        "Authorization": `Bearer ${token}`
                     },
                     body: JSON.stringify(plant),
                 }

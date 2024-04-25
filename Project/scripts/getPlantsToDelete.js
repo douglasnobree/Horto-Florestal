@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', async () => {
+    const token = localStorage.getItem('token');
     const divPlantas = document.getElementById('boxPlants');
     try {
         const response = await fetch(
@@ -20,18 +21,18 @@ document.addEventListener('DOMContentLoaded', async () => {
             spanID.innerHTML = `ID:`;
 
             const idPlanta = document.createElement('div');
-            idPlanta.classList.add('ID'); 
+            idPlanta.classList.add('ID');
             idPlanta.textContent = planta.id;
 
             const spanNome = document.createElement('span');
             spanNome.innerHTML = `Nome:`;
 
             const nomePlanta = document.createElement('div');
-            nomePlanta.classList.add('Nome'); 
-            nomePlanta.textContent = planta.nome; 
+            nomePlanta.classList.add('Nome');
+            nomePlanta.textContent = planta.nome;
 
             const btnDelete = document.createElement('button');
-            btnDelete.textContent = 'Delete'; 
+            btnDelete.textContent = 'Delete';
             btnDelete.classList.add('btnDelete');
             btnDelete.addEventListener('click', async () => {
                 try {
@@ -39,13 +40,12 @@ document.addEventListener('DOMContentLoaded', async () => {
                         `https://backend.cactustheca.shop/plants/deletePlant?id=${planta.id}`,
                         {
                             method: 'DELETE',
+                            headers: {
+                                'Content-Type': 'application/json',
+                                Authorization: `Bearer ${token}`,
+                            },
                         }
                     );
-                    //     `http://159.112.182.217:3333/plants/deletePlant?id=${planta.id}`,
-                    //     {
-                    //         method: 'DELETE',
-                    //     }
-                    // );
 
                     if (!response.ok) {
                         throw new Error('Erro ao deletar a planta');
@@ -54,7 +54,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                     PlantaDiv.remove();
                 } catch (error) {
                     console.error('Erro ao deletar a planta:', error);
-                    
                 }
             });
 

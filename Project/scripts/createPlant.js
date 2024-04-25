@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', async () => {
+    const token = localStorage.getItem('token');
     const form = document.getElementById('formCreateNewPlant');
     form.addEventListener('submit', async (event) => {
         event.preventDefault();
@@ -45,6 +46,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    "Authorization": `Bearer ${token}`
                 },
                 body: JSON.stringify(plant),
             }
