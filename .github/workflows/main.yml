@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+      
+
 
       - name: Build Docker image
         run: docker build -t douglasnobre65/hortofrontend:v1.0 .
