@@ -305,6 +305,18 @@ button:hover {
     transition: 0.5s;
 }
 
+.buttonFlip{
+    color: rgb(32, 34, 33);
+    background: transparent;
+    border: solid 2px rgb(107, 112, 108);
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 16px;
+    width: 150px;
+    cursor: pointer;
+    width: 100%;
+}
+
 .container-text {
     padding: 150px 0 0 130px;
 }
@@ -422,6 +434,22 @@ button:hover {
     border-radius: 15px;
     object-fit: cover;
 }
+
+.tagsTypes{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+.tagIMG {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+
 
 @media (max-width: 700px) {
     nav,

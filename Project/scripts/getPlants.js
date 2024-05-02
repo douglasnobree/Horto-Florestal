@@ -52,18 +52,39 @@ document.addEventListener('DOMContentLoaded', async () => {
             infos.classList.add('infos');
         
             const nomeCientifico = document.createElement('p');
-            nomeCientifico.innerHTML = `<strong>Nome científico:</strong> <span>${planta.especie}</span>`;
+            nomeCientifico.innerHTML = `<strong>Nome científico:</strong> <i><span>${planta.especie}</span></i>`;
         
             const usoMedicinal = document.createElement('p');
             usoMedicinal.innerHTML = `<strong>Uso medicinal:</strong> <span>${planta.medicinal ? 'Sim' : 'Não'}</span>`;
         
             const descricaoCompleta = document.createElement('p');
             const descricaoCompletaBack = planta.descricao.slice(0, 150);
-            descricaoCompleta.innerHTML = `<strong>Descrição:</strong> <span>${descricaoCompletaBack}${planta.descricao.length > 150 ? '...' : ''}</span>`;
+            descricaoCompleta.innerHTML = `<strong>Utilidade:</strong> <span>${descricaoCompletaBack}${planta.descricao.length > 150 ? '...' : ''}</span>`;
+
+            const divTags = document.createElement('div');
+            divTags.classList.add('tagsTypes');
+            if(planta.medicinal) {
+                const tagMedicinal = document.createElement('img');
+                tagMedicinal.classList.add('tagIMG');
+                tagMedicinal.src = '../imgs/medicine.svg';
+                divTags.appendChild(tagMedicinal);
+            }if(planta.ornamental) {
+                const tagOrnamental = document.createElement('img');
+                tagOrnamental.classList.add('tagIMG');
+                tagOrnamental.src = '../imgs/ornamental.svg';
+                divTags.appendChild(tagOrnamental);
+            }if(planta.frutifera) {
+                const tagComestivel = document.createElement('img');
+                tagComestivel.classList.add('tagIMG');
+                tagComestivel.src = '../imgs/berry.svg';
+                divTags.appendChild(tagComestivel);
+            }
             
         
             const button = document.createElement('button');
+            button.classList.add('buttonFlip');
             button.textContent = 'Ver mais informações';
+
         
             flipCardFront.appendChild(imagem);
             flipCardFront.appendChild(descricao);
@@ -76,6 +97,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             infos.appendChild(nomeCientifico);
             infos.appendChild(usoMedicinal);
             infos.appendChild(descricaoCompleta);
+            infos.appendChild(divTags);
             flipCardBack.appendChild(button);
         
             flipCardInner.appendChild(flipCardFront);

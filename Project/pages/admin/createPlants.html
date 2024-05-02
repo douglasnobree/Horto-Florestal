@@ -69,7 +69,6 @@
             <div class="Content">
                 <h1>Criar Plantas</h1>
                 <div class="contentbody">
-                    <div class="createNewPlant">
                         <form
                             action="#"
                             method="POST"
@@ -114,26 +113,12 @@
                                 id="plantFlowering"
                                 name="floracao" />
 
-                            <label for="plantCuriosities"
-                                >Curiosidades sobre a Planta:</label
-                            >
-                            <input
-                                type="text"
-                                id="plantCuriosities"
-                                name="curiosidades" />
-
                             <label for="plantCare"
                                 >Cuidados com a Planta:</label
                             >
                             <input type="text" id="plantCare" name="cuidados" />
 
-                            <label for="plantWatering"
-                                >Instruções de Rega:</label
-                            >
-                            <input type="text" id="plantWatering" name="rega" />
-
-                            
-                            <!-- Novos campos -->
+                        
                             <label for="frutifera">Frutífera:</label>
                             <input
                             type="checkbox"
@@ -152,8 +137,6 @@
                             id="ornamental"
                             name="ornamental" />
                             
-                            <label for="tipo">Tipo:</label>
-                            <input type="text" id="tipo" name="tipo" />
                             
                             <label for="utilidade">Utilidade:</label>
                             <input
@@ -172,10 +155,10 @@
 
                             <input type="submit" value="Criar Planta" />
                         </form>
-                    </div>
                 </div>
             </div>
         </div>
     </body>
+    <script src="/Project/scripts/verifyToken.js" ></script>
     <script src="/Project/scripts/createPlant.js"></script>
 </html>
