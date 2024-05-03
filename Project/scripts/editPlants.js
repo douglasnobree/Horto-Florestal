@@ -22,14 +22,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         form.plantImageUrl.value = jsonPlant.img_url;
         form.plantLocation.value = jsonPlant.localizacao;
         form.plantFlowering.value = jsonPlant.floracao;
-        form.plantCuriosities.value = jsonPlant.curiosidades;
         form.plantCare.value = jsonPlant.cuidados;
-        form.plantWatering.value = jsonPlant.rega;
         form.frutifera.checked = jsonPlant.frutifera;
         form.medicinal.checked = jsonPlant.medicinal;
         form.ornamental.checked = jsonPlant.ornamental;
-        form.tipo.value = jsonPlant.tipo;
         form.utilidade.value = jsonPlant.utilidade;
+
+        console.log('teste')
 
         form.addEventListener('submit', async (event) => {
             event.preventDefault();
