@@ -66,17 +66,17 @@ document.addEventListener('DOMContentLoaded', async () => {
             if(planta.medicinal) {
                 const tagMedicinal = document.createElement('img');
                 tagMedicinal.classList.add('tagIMG');
-                tagMedicinal.src = '../imgs/medicine.svg';
+                tagMedicinal.src = '../imgs/remedio-icon.png';
                 divTags.appendChild(tagMedicinal);
             }if(planta.ornamental) {
                 const tagOrnamental = document.createElement('img');
                 tagOrnamental.classList.add('tagIMG');
-                tagOrnamental.src = '../imgs/ornamental.svg';
+                tagOrnamental.src = '../imgs/vaso-icon.png';
                 divTags.appendChild(tagOrnamental);
             }if(planta.frutifera) {
                 const tagComestivel = document.createElement('img');
                 tagComestivel.classList.add('tagIMG');
-                tagComestivel.src = '../imgs/berry.svg';
+                tagComestivel.src = '../imgs/caju-icon.png';
                 divTags.appendChild(tagComestivel);
             }
             
