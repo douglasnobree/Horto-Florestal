@@ -12,7 +12,7 @@
 header {
     background-color: #f0f0f0;
     width: 100%;
-    padding: 20px 4%;
+    padding: 0px 4%;
 }
 
 .logo {
@@ -63,7 +63,7 @@ header ul a {
     bottom: 0;
     height: 2px;
     width: 0;
-    background-color: #ffc506;
+    background-color: #23ff06;
     transition: 0.5s ease;
 }
 
@@ -83,7 +83,7 @@ header ul a {
     bottom: 0;
     height: 0;
     width: 100%;
-    background-color: #ffc506;
+    background-color: #06ff0a;
     transition: 0.4s ease;
     z-index: -1;
 }
