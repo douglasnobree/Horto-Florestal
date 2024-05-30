@@ -113,7 +113,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
         
 
-        // Adiciona evento de click em cada planta para expandir informações
         const plantas = document.querySelectorAll('.planta');
         plantas.forEach((planta) => {
             planta.addEventListener('click', async () => {

@@ -375,9 +375,10 @@ button:hover {
 
 .planta-info {
     display: flex;
+    padding: 10px   ;
     flex-direction: column;
     gap: 20px;
-    margin-left: 20px;
+    
 }
 
 .planta-info h2 {
@@ -513,7 +514,7 @@ button:hover {
     }
 
     .planta-img {
-        width: 430px;
+        padding: 10px;
         height: 100%;
         border-radius: 15px;
     }
