@@ -321,13 +321,14 @@ button:hover {
     padding: 150px 0 0 130px;
 }
 
-ul {
+.content-text ul {
     list-style-type: none;
 }
 
-ul li:before {
+.content-text ul li:before {
     content: "• ";
 }
+
 
 /* ---------------------------------------------------------------------------------------- */
 .plantas {
