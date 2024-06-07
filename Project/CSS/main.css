@@ -321,6 +321,14 @@ button:hover {
     padding: 150px 0 0 130px;
 }
 
+ul {
+    list-style-type: none;
+}
+
+ul li:before {
+    content: "• ";
+}
+
 /* ---------------------------------------------------------------------------------------- */
 .plantas {
     width: 100%;
