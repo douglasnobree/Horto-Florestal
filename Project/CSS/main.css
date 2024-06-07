@@ -370,16 +370,16 @@ button:hover {
 }
 
 .planta-img {
-    width: 50%;  /* Diminua o tamanho para 50% */
-    height: 50%;  /* Diminua o tamanho para 50% */
+    width: 80%;  /* Diminua o tamanho para 50% */
+    height: 80%;  /* Diminua o tamanho para 50% */
     border-radius: 15px;
     display: block;  /* Adicionado para centralizar a imagem */
     margin: auto;  /* Adicionado para centralizar a imagem */
 }
 
 .img-plant {
-    width: 50%;  /* Diminua o tamanho para 50% */
-    height: 50%;  /* Diminua o tamanho para 50% */
+    width: 80%;  /* Diminua o tamanho para 50% */
+    height: 80%;  /* Diminua o tamanho para 50% */
     border-radius: 15px;
     object-fit: cover;
     display: block;  /* Adicionado para centralizar a imagem */
